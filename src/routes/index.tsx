@@ -35,13 +35,12 @@ function Home() {
               <span className="h-px w-8 bg-lime" /> Your Vision. Our Creation.
             </p>
             <h1
-              className="animate-rise mt-6 text-[2.7rem] font-extrabold leading-[0.98] text-balance sm:text-6xl xl:text-[5.4rem]"
+              className="animate-rise mt-6 text-[2.7rem] font-extrabold leading-[0.98] text-balance sm:text-6xl xl:text-7xl"
               style={{ animationDelay: "80ms" }}
             >
               Your Business Deserves More Than{" "}
-              <span className="relative inline-block">
+              <span className="bg-[linear-gradient(transparent_62%,var(--lime)_62%,var(--lime)_90%,transparent_90%)] box-decoration-clone">
                 Just a Website.
-                <span className="absolute -bottom-1 left-0 -z-10 h-[0.32em] w-full bg-lime" />
               </span>
             </h1>
             <p className="animate-rise mt-7 max-w-lg text-lg text-muted-foreground" style={{ animationDelay: "160ms" }}>

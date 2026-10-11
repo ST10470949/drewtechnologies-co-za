@@ -45,9 +45,9 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Link to="/contact" className={`${btnLime} hidden !py-2.5 sm:inline-flex`}>
+          <span className="hidden sm:block"><Link to="/contact" className={`${btnLime} whitespace-nowrap !py-2.5`}>
             Start a Project
-          </Link>
+          </Link></span>
           <button
             type="button"
             className="grid h-10 w-10 place-items-center rounded-full border border-border md:hidden"
