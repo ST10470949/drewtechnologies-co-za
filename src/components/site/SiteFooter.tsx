@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, MessageCircle, MapPin } from "lucide-react";
 import { SITE, whatsappLink } from "@/lib/site";
-import { LogoMark } from "./Logo";
+
 import { CtaLink } from "./Buttons";
 
 export function SiteFooter() {
@@ -66,7 +66,6 @@ export function SiteFooter() {
           <span className="tracking-[0.25em]">WEBSITES / E-COMMERCE / PORTFOLIOS / REDESIGNS</span>
         </div>
       </div>
-      <span className="hidden"><LogoMark /></span>
     </footer>
   );
 }
