@@ -4,7 +4,7 @@ import { SITE, whatsappLink } from "@/lib/site";
 export function WhatsAppFloat() {
   return (
     <a
-      href={whatsappLink(SITE.whatsapp[0].intl)}
+      href={whatsappLink(SITE.whatsapp[0]!.intl)}
       target="_blank"
       rel="noreferrer"
       aria-label="Chat with Drew Technologies on WhatsApp"

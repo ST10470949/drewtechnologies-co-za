@@ -129,7 +129,7 @@ function Contact() {
     if (Object.keys(e).length === 0) setStep((s) => s + 1);
   };
   const sendWhatsApp = () => {
-    window.open(whatsappLink(SITE.whatsapp[0].intl, summary(f)), "_blank", "noopener");
+    window.open(whatsappLink(SITE.whatsapp[0]!.intl, summary(f)), "_blank", "noopener");
     setSentVia("whatsapp");
   };
   const sendEmail = () => {
@@ -263,7 +263,7 @@ function Contact() {
                   <div role="status" className="mt-6 rounded-xl border border-lime bg-card p-5 text-sm">
                     <p className="font-bold">Almost done — your enquiry is ready in {sentVia === "whatsapp" ? "WhatsApp" : "your email app"}.</p>
                     <p className="mt-1 text-muted-foreground">
-                      Press send there to deliver it. If nothing opened, use the other option below or message us on WhatsApp {SITE.whatsapp[0].label}.
+                      Press send there to deliver it. If nothing opened, use the other option below or message us on WhatsApp {SITE.whatsapp[0]!.label}.
                     </p>
                   </div>
                 )}
