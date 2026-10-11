@@ -73,7 +73,7 @@ function summary(f: Form) {
 const inputCls =
   "w-full rounded-lg border border-input bg-card px-4 py-3.5 text-base text-foreground placeholder:text-muted-foreground/70 transition-colors focus:border-ring focus:outline-none focus:ring-2 focus:ring-ring/30";
 
-function Field({ label, error, children, id, optional }: { label: string; error?: string; children: React.ReactNode; id: string; optional?: boolean }) {
+function Field({ label, error, children, id, optional }: { label: string; error?: string | undefined; children: React.ReactNode; id: string; optional?: boolean }) {
   return (
     <div>
       <label htmlFor={id} className="mb-2 block text-sm font-bold">
@@ -85,7 +85,7 @@ function Field({ label, error, children, id, optional }: { label: string; error?
   );
 }
 
-function Chips({ options, value, onToggle, multi, label, error }: { options: string[]; value: string[]; onToggle: (o: string) => void; multi?: boolean; label: string; error?: string }) {
+function Chips({ options, value, onToggle, multi, label, error }: { options: string[]; value: string[]; onToggle: (o: string) => void; multi?: boolean; label: string; error?: string | undefined }) {
   return (
     <fieldset>
       <legend className="mb-3 text-sm font-bold">{label}</legend>
