@@ -7,7 +7,7 @@ import { SERVICES } from "@/lib/content";
 
 export const Route = createFileRoute("/contact")({
   validateSearch: (s: Record<string, unknown>): { type?: string } =>
-    typeof s.type === "string" ? { type: s.type } : {},
+    typeof s["type"] === "string" ? { type: s["type"] as string } : {},
   head: () => ({
     meta: [
       { title: "Start a Project — Drew Technologies" },
