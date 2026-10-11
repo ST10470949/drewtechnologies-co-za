@@ -8,6 +8,6 @@ describe("WhatsApp contact", () => {
   it("pre-fills the quotation message", () => {
     const url = whatsappLink("27686917586");
     expect(url.startsWith("https://wa.me/27686917586?text=")).toBe(true);
-    expect(decodeURIComponent(url.split("text=")[1])).toBe(DEFAULT_WA_MESSAGE);
+    expect(decodeURIComponent(url.split("text=")[1] ?? "")).toBe(DEFAULT_WA_MESSAGE);
   });
 });

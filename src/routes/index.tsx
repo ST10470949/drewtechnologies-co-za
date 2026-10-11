@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const [corp, fashion, , folio] = PROJECTS;
+  const corp = PROJECTS[0]!, fashion = PROJECTS[1]!, folio = PROJECTS[3]!;
   return (
     <>
       <section className="relative overflow-hidden">
